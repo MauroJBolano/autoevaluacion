@@ -1,4 +1,3 @@
-
 img{
 	transition: all 0.5s linear;
 
@@ -42,7 +41,54 @@ body{
 
 .menu li a:hover{
 	background: #ef8354;
+_____________________________________________________________________
+}
+.navegacion{
+	width: 1000px;
+	margin: auto;
+	background: #87cefa;
+}
 
+.navegacion ul{
+	list-style: none;
+}
+
+
+.menu > li{
+	position:relative;
+	display: inline-block;
+}
+.menu > li a{
+	display: block;
+	padding: 15px 20px;
+	color:white;
+	font-family:arial, helvetica;
+	text-decoration: none; 
+}
+/*Submenu*/
+.submenu{
+	position: absolute;
+	background:#87cefa;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity1.5s;
+
+}
+
+.submenu li a{
+	display: block;
+	padding:10px;
+	color: white;
+	font-family: arial, helvetica;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+_____________________________________________________________________
 }
 img{
 	width:auto;
@@ -52,7 +98,5 @@ img{
 	border-radius: 10px;
 	box-shadow:5px 5px 5px 0px#ffffff;
 }
-
-
 
 
